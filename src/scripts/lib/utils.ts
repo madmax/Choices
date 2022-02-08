@@ -92,10 +92,8 @@ export const sanitise = <T>(value: T | string): T | string => {
   }
 
   return value
-    .replace(/&/g, '&amp;')
     .replace(/>/g, '&gt;')
-    .replace(/</g, '&lt;')
-    .replace(/"/g, '&quot;');
+    .replace(/</g, '&lt;');
 };
 
 export const strToEl = ((): ((str: string) => Element) => {

@@ -3863,7 +3863,7 @@ var sanitise = function (value) {
     return value;
   }
 
-  return value.replace(/&/g, '&amp;').replace(/>/g, '&gt;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  return value.replace(/>/g, '&gt;').replace(/</g, '&lt;');
 };
 
 exports.sanitise = sanitise;
